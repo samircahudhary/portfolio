@@ -1,0 +1,63 @@
+#about{height: 100%;
+width: 100%;
+
+background-color: rgb(13, 13, 13);
+display: flex;}
+
+.aboutleft{
+height: 100vh;
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;}
+
+.circleline{
+display: flex;
+flex-direction: column;
+align-items: center;gap: 2px;}
+
+.circle{width: 60px;
+height: 60px;
+border-radius: 50%;
+background: linear-gradient(rgb(23, 255, 255),rgb(255, 255, 255));
+filter: drop-shadow(5px 3px 25px rgb(23, 240, 255));}
+
+.line{height: 120px;
+width: 2px;
+background-color: aliceblue;
+position: relative;}
+
+.details{color: white;
+margin: 10px;
+gap: 20px;
+flex-direction: column;
+display: flex;justify-content: space-evenly;}
+
+.personalinfo{margin-bottom: 30px;}
+.educationinfo{margin-bottom: 30px;}
+.skillsinfo{margin-top: 30px;}
+
+.personalinfo h1,
+.educationinfo h1,
+.skillsinfo h1{font-size: 1.5rem;
+filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));}
+
+.aboutright {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  #about{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,46 @@
+#project
+    {height: 100%;
+width: 100%;
+min-height: 100vw;
+background-color: rgb(13, 13, 13);
+}
+
+#project{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#project h2 {
+    color: aliceblue;
+    font-size: 5rem;
+    filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));
+    margin-bottom: 20px;
+}   
+#project p{
+    color: aliceblue;
+    font-size: 1.2rem;
+    filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));
+    margin-bottom: 40px;
+    text-align: center;padding: 10px;
+}
+
+.projectcard {
+  width: 90%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: row;  /* ensure horizontal alignment */
+  gap: 40px;
+  overflow-x: auto;     /* horizontal scroll */
+  overflow-y: hidden;
+   /* prevent wrapping */
+  padding: 60px;
+  scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+
+}

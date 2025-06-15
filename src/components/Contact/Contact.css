@@ -1,0 +1,128 @@
+#contact
+    {height: 100%;
+width: 100%;
+min-height: 40vw;
+background-color: rgb(13, 13, 13);
+display: flex;
+
+}
+
+.leftcontact{
+    width: 50%;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftcontact img{
+    width: 65%;
+     filter: drop-shadow(3px 3px 5px rgb(90, 236, 255));
+}
+
+.leftcontact:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    filter: drop-shadow(5px 3px 10px rgb(90, 236, 255));
+}
+
+.rightcontact{
+    width: 50%;
+    height: 100%;
+    padding: 6%;
+    background-color: rgba(29, 29, 31, 0.902);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+    filter: drop-shadow(5px 3px 20px rgb(0, 0, 0));
+}
+
+.rightcontact:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    filter: drop-shadow(5px 3px 20px rgb(90, 236, 255));
+}
+form{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+input, textarea{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: rgb(255, 252, 252);
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));
+}
+.button1{
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: rgb(13, 13, 13);
+    color: aliceblue;
+    filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));
+    cursor: pointer;
+}
+.button1:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    filter: drop-shadow(5px 3px 10px rgb(90, 236, 255));
+}
+
+@media (max-width: 768px) {
+    #contact{
+        flex-direction: column;
+    }
+    .leftcontact, .rightcontact{
+        width: 100%;
+        height: 50%;
+    }
+    .leftcontact img{
+        width: 80%;
+        padding-block: 50px;
+    }
+    .rightcontact{
+        padding: 3%;
+    }
+    form{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
+
+.footer{
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+   
+}
+.footer img{
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(3px 3px 5px rgb(90, 236, 255));
+}
+
+.footer img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    filter: drop-shadow(5px 3px 10px rgb(90, 236, 255));
+}
