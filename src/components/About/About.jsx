@@ -86,6 +86,7 @@ function About() {
             <p>MERN STACK WEB DEVELOPER</p>
             <p>C++</p>
             <p>DSA</p>
+            <p>FRONTEND DEVELOPER</p>
           </div>
         </div>
       </div>

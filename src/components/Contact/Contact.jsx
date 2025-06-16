@@ -4,6 +4,7 @@ import instagram from '../../assets/images/instagram.png'
 import github from '../../assets/images/github.png'
 import linkedin from '../../assets/images/linkedin.png'
 import contact from '../../assets/images/contact.png'
+
 function Contact() {
   return (
     <div id='contact'> 
@@ -13,10 +14,10 @@ function Contact() {
 
     <div className="rightcontact">
       
-      <form>
-        <input type="text" placeholder='Name' />
-        <input type="email" placeholder='Email' />
-        <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+      <form action="https://formspree.io/f/xovwwyjg" method="POST">
+        <input type="text" name="user name" placeholder='Name' />
+        <input type="email" name ='email' placeholder='Email' />
+        <textarea name="message" id="" cols="30" rows="10" placeholder='Message'></textarea>
         <button className='button1' type="submit">Send</button>
       </form>
     </div>

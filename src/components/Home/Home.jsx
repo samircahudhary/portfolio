@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import './Home.css';
-import man from '../../assets/images/man.png';
+
 import Typewriter from 'typewriter-effect';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import mypic from '../../assets/images/mypic.jpg';
 
 function Home() {
   const scope = useRef();
@@ -59,7 +60,7 @@ function Home() {
       </div>
 
       <div className="righthome">
-        <img src={man} alt="Samir" />
+        <img src={mypic} alt="Samir" />
       </div>
     </div>
   );
