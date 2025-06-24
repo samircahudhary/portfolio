@@ -56,6 +56,7 @@ function About() {
 
   return (
     <div id='about' ref={scope}>
+      
       <div className="aboutleft">
         <div className="circleline">
           <div className="circle"></div>
@@ -83,10 +84,10 @@ function About() {
 
           <div className="skillsinfo">
             <h1>SKILLS</h1>
-            <p>MERN STACK WEB DEVELOPER</p>
-            <p>C++</p>
-            <p>DSA</p>
-            <p>FRONTEND DEVELOPER</p>
+            <p> Languages: HTML, CSS, JavaScript, C++, Python </p>
+            <p> Libraries: React, Bootstrap, Tailwind </p>
+            <p>Tools: Git, GitHub, VS Code</p>
+            <p> APIs: OpenAI, Gemini, REST APIs</p>
           </div>
         </div>
       </div>
@@ -96,8 +97,11 @@ function About() {
         <Card title="C++" image={cpp} />
         <Card title="DSA" image={dsa} />
       </div>
+      
     </div>
   );
+  
 }
+
 
 export default About;

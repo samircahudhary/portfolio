@@ -51,9 +51,10 @@ function Home() {
               strings: ['WEB DEVELOPER', 'MERN STACK DEVELOPER', 'FRONTEND DEVELOPER'],
               autoStart: true,
               loop: true,
-            }}
-          />
+            }}/>
+           
         </div>
+        
         <a href="/resume.pdf" download>
           <button className='cv'>Download CV</button>
         </a>

@@ -7,6 +7,7 @@ import Home from './components/Home/Home'
 import Nav from './components/Nav/Nav'
 import Project from './components/Project/Project'
 
+
 function App() {
   
 
@@ -15,6 +16,7 @@ function App() {
       <Nav/>
       <Home/>
       <About/>
+      
       <Project/>
       <Contact/>
     

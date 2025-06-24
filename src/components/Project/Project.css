@@ -7,13 +7,14 @@ background-color: rgb(13, 13, 13);
 
 #project{
     width: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
+
+
+
 
 #project h2 {
     color: aliceblue;
@@ -44,3 +45,19 @@ background-color: rgb(13, 13, 13);
     -ms-overflow-style: none; /* IE and Edge */
 
 }
+
+@media (min-width: 1024px) {
+    #project h1 {
+        font-size: 5.5rem;
+    }
+    #project h2 {
+        font-size: 12rem;
+        font-weight: 900;
+
+    }
+    #project p {
+        font-size: 3rem;
+        padding: 10px;
+    }
+}
+
