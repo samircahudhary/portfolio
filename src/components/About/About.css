@@ -9,7 +9,7 @@
 
 
 .aboutleft{
-height: 50vh;
+height: 100vh;
 width: 50%;
 display: flex;
 justify-content: center;
@@ -49,7 +49,7 @@ filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));}
 
 .aboutright {
   width: 50%;
-  height: 50vh;
+  height: 100vh;
   
   display: flex;
   justify-content: center;
