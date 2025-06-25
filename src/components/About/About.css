@@ -2,55 +2,74 @@
   width: 100%;
   background-color: rgb(13, 13, 13);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap; /* Helps avoid overflow on smaller screens */
 }
 
+.aboutleft {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
-.aboutleft{
-height: 100vh;
-width: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;}
+.circleline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
 
-.circleline{
-display: flex;
-flex-direction: column;
-align-items: center;gap: 2px;}
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(rgb(23, 255, 255), rgb(255, 255, 255));
+  filter: drop-shadow(5px 3px 25px rgb(23, 240, 255));
+}
 
-.circle{width: 60px;
-height: 60px;
-border-radius: 50%;
-background: linear-gradient(rgb(23, 255, 255),rgb(255, 255, 255));
-filter: drop-shadow(5px 3px 25px rgb(23, 240, 255));}
+.line {
+  height: 120px;
+  width: 2px;
+  background-color: aliceblue;
+  position: relative;
+}
 
-.line{height: 120px;
-width: 2px;
-background-color: aliceblue;
-position: relative;}
+.details {
+  color: white;
+  margin: 10px;
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-.details{color: white;
-margin: 10px;
-gap: 20px;
-flex-direction: column;
-display: flex;justify-content: space-evenly;}
+.personalinfo {
+  margin-bottom: 30px;
+}
 
-.personalinfo{margin-bottom: 30px;}
-.educationinfo{margin-bottom: 30px;}
-.skillsinfo{margin-top: 30px;}
+.educationinfo {
+  margin-bottom: 30px;
+}
+
+.skillsinfo {
+  margin-top: 30px;
+}
 
 .personalinfo h1,
 .educationinfo h1,
-.skillsinfo h1{font-size: 1.5rem;
-filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));}
+.skillsinfo h1 {
+  font-size: 1.5rem;
+  filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));
+}
 
 .aboutright {
   width: 50%;
   height: 100vh;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,73 +77,31 @@ filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));}
   gap: 20px;
 }
 
-
+/* Responsive Styles for Tablets & Phones */
 @media (max-width: 768px) {
-  #about{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 1024px) {
   #about {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .aboutleft {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .circleline {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2px;
   }
+
+  .aboutleft,
+  .aboutright {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
   .circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: linear-gradient(rgb(23, 255, 255), rgb(255, 255, 255));
-    filter: drop-shadow(5px 3px 25px rgb(23, 240, 255));
+    width: 40px;
+    height: 40px;
   }
+
   .line {
-    height: 130px;
-    width: 2px;
-    background-color: aliceblue;
-    position: relative;
-  }
-  .circle {
-    width: 250px;
-    height: 250px;
+    height: 80px;
   }
 
-  .details h1 {
-    font-size: 5rem;
-
-  }
-  .details p {
-    font-size: 3.5rem;
-  }
-
-  .personalinfo{
-    margin-bottom: 2.2vw;
-  }
-  .educationinfo{
-    margin-top: 2.4vw;
-  }
-  .skillsinfo{
-    margin-top: 3.6vw;
-  }
-  .aboutright{
-    font-size: 4rem;
-    font-weight: 900;
+  .personalinfo h1,
+  .educationinfo h1,
+  .skillsinfo h1 {
+    font-size: 1.2rem;
   }
 }
