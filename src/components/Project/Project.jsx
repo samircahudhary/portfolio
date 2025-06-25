@@ -17,7 +17,7 @@ function Project() {
       <a href="https://github.com/samircahudhary"> GITHUB</a>
     </p>
     <div className="projectcard">
-      <a href="https://ai-chat-bot-flax-delta.vercel.app/"><Card title={'VIRTUAL ASSISTANCE'} image={ai}/></a>
+      <a href="https://ai-voice-assistant-4vnx-6jp6zgh4a-samircahudharys-projects.vercel.app/"><Card title={'VIRTUAL ASSISTANCE'} image={ai}/></a>
        <a href="https://ecart-d69e.vercel.app/"> <Card title={"ECOMMERCE"} image={ecom}/></a> 
      <a href="https://collage-web-issues-lbud.vercel.app/"> <Card title={"COLLAGE WEBSITE GENZEE"} image={college}/></a>
     
