@@ -5,9 +5,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
   flex-wrap: wrap; /* Helps avoid overflow on smaller screens */
 }
-
+body{overflow-x: hidden;}
 .aboutleft {
   height: 100vh;
   width: 50%;
@@ -76,6 +78,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.aboutright .card{
+  margin-right: 500px;
+}
 
 /* Responsive Styles for Tablets & Phones */
 @media (max-width: 768px) {
@@ -104,4 +109,8 @@
   .skillsinfo h1 {
     font-size: 1.2rem;
   }
+  .aboutright .card {
+  margin-right: 200px;
+ 
+}
 }

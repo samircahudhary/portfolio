@@ -8,11 +8,12 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 40px;
+  overflow-x: hidden;
 }
 
 #project h2 {
   color: aliceblue;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
   filter: drop-shadow(5px 3px 2px rgb(90, 236, 255));
   margin-bottom: 20px;
@@ -30,7 +31,7 @@
 }
 
 .projectcard {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -45,6 +46,16 @@
 .projectcard::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari, Opera */
 }
+.card {
+  flex: 0 0 auto;
+  width: 320px;            /* Increase width */
+  height: 200px;           /* Increase height */
+  max-width: 90vw;
+  background: cyan;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+
 
 /* Responsive styles */
 @media (min-width: 1024px) {
@@ -58,3 +69,4 @@
     padding: 20px;
   }
 }
+

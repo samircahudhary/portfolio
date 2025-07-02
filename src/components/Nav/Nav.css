@@ -14,7 +14,7 @@ nav{
   backdrop-filter: blur(10px);          /* blur effect */
   -webkit-backdrop-filter: blur(10px);
     background-color: rgba(0.2, 0.3, 0.5, 0.8); /* semi-transparent black */
-    padding: 0 20px;
+    padding: 0 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
      
 }
